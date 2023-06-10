@@ -309,6 +309,11 @@ footer ul {
         grid-column: 5/11;
         grid-row: 1/2;
     }
+
+    /* add style for the ul tag inside the reverse class */
+    #projects .reverse ul {
+        justify-content: flex-start;
+    }
 }
 
 @media (min-width: 850px) {
