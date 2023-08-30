@@ -74,7 +74,7 @@ a:hover {
     padding: 4rem 1rem 10rem 1rem;
     max-width: 1200px;
     margin: 0 auto;
-    height: 100vh;
+    
 }
 
 #intro p {
@@ -272,6 +272,9 @@ footer ul {
 
 
 @media (min-width: 550px) {
+    #intro{
+        height: 100vh;
+    }
     article {
         display: grid;
         grid-template-columns: repeat(10 1fr);
@@ -317,6 +320,8 @@ footer ul {
 }
 
 @media (min-width: 850px) {
+
+    
     nav {
         max-width: 1200px;
         margin: 0 auto;
