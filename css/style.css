@@ -275,9 +275,7 @@ footer ul {
 
 
 @media (min-width: 550px) {
-    #intro{
-        height: 100vh;
-    }
+   
     article {
         display: grid;
         grid-template-columns: repeat(10 1fr);
@@ -324,7 +322,9 @@ footer ul {
 
 @media (min-width: 850px) {
 
-    
+    #intro{
+        height: 100vh;
+    }
     nav {
         max-width: 1200px;
         margin: 0 auto;
