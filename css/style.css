@@ -174,6 +174,33 @@ nav [class*="fa-"]:hover {
     background-color: var(--hotmag);
 }
 
+#about{
+    padding: 4rem 2rem;
+    max-width: 1200px;
+
+}
+
+.about-desc{
+    font-size: 1rem;
+    line-height: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about-text{
+    flex: 1;
+
+}
+
+.about-img{
+    flex: 1;
+    margin-left: 2rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
 footer {
     text-align: center;
     padding: 4rem 0;
@@ -239,6 +266,8 @@ footer ul {
     border-radius: 25px;
     padding: 1rem;
 }
+
+
 
 
 /* Contact form */
@@ -335,5 +364,21 @@ footer ul {
 @media screen and (min-width: 550px) {
     #intro{
         height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #about {
+        padding: 2rem 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .about-desc {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .about-img {
+        margin-left: 0; /* Remove margin on smaller screens */
+        margin-top: 1rem; /* Add some top margin for spacing */
     }
 }
