@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
   </head>
 
   <body>
@@ -19,26 +20,6 @@
     <script src="https://unpkg.com/vue-router@4.0.0/dist/vue-router.global.js"></script>
     <!-- Add your other script links here -->
 
-    <script>
-      const Home = { template: "<div>Home</div>" };
-      const About = { template: "<div>About</div>" };
-      const Contact = { template: "<div>Contact</div>" };
-
-      const routes = [
-        { path: "/", component: Home },
-        { path: "/about", component: About },
-        { path: "/contact", component: Contact },
-      ];
-
-      const router = VueRouter.createRouter({
-        history: VueRouter.createWebHistory(),
-        routes,
-      });
-
-      const app = Vue.createApp({});
-      app.use(router);
-      app.mount("#app");
-    </script>
     <header>
       <nav>
         <ul>
@@ -79,12 +60,16 @@
           <p class="name">Hi, my name is <span>Omollo Oganda,</span></p>
           <h2>I am a Software Developer.</h2>
           <p>
-            I built an ASK AI app that allows users to ask questions and get
-            responses, Transcribe Audio and Describe images
+            Currently building an application that will aims to help students
+            list their old or second hand items such as books, furniture and
+            hostel rooms and sell them to other students. The app will also
+            allow students to buy books from other students. I am eliminating
+            middlemen who exploit students by buying their items at a very low
+            price and selling them at a very high price.
             <a
-              href="https://delightful-pond-0888cad10.4.azurestaticapps.net"
+              href="https://lively-plant-03271af10.4.azurestaticapps.net/"
               target="_blank"
-              >ASK AI ❓</a
+              >TripuoVerse ❓</a
             >
           </p>
         </div>
@@ -93,6 +78,39 @@
       <div class="section-dkblue">
         <section id="projects">
           <h2>Projects am proud of</h2>
+
+          <article>
+            <div class="text">
+              <h4>ASK AI</h4>
+              <h3>A Vue and Node</h3>
+              <p class="blackbox">
+                I crafted a dynamic web application using Vue.js and Node.js,
+                skillfully incorporating three essential APIs to enhance its
+                capabilities. By seamlessly integrating OpenAI for text
+                processing, Deepgram SDK for transcription, and Replicate for
+                image analysis, the app delivers a seamless and comprehensive
+                user experience. A standout feature includes the ability to
+                transcribe text with Deepgram, followed by options to analyze or
+                summarize the content using the OpenAI API. This project
+                underscores my adeptness in harnessing diverse technologies to
+                create a powerful and cohesive application, reflecting my
+                commitment to innovation and technical prowess in my portfolio.
+                <a
+                  href="https://delightful-pond-0888cad10.4.azurestaticapps.net/"
+                  >Live Site</a
+                >
+                <b>Used trial version of OpenAi, Response can be drammatic</b>
+              </p>
+              <h4>Technologies used include:</h4>
+              <ul>
+                <li>Vue 3</li>
+                <li>Pinia</li>
+                <li>Node && Express</li>
+              </ul>
+            </div>
+
+            <img src="./img/AskAi.png" alt="" />
+          </article>
           <article class="reverse">
             <div class="text">
               <h4>Consultation</h4>
