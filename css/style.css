@@ -44,9 +44,7 @@ a {
   color: var(--magenta);
 }
 
-img {
-  width: 100%;
-}
+
 
 a:hover {
   color: var(--hotmag);
@@ -79,8 +77,7 @@ a:hover {
   gap: 2rem;
 }
 
-.intro-left {
-}
+
 
 .profile-img {
   width: 400px;
@@ -258,11 +255,13 @@ footer ul {
 
 
 #projects img {
-  margin: 2rem 0 4rem 0;
+  margin: 2rem 0 1rem 0;
   border-left: 1px solid var(--aqua);
   border-top: 1px solid var(--aqua);
   border-radius: 25px;
-  padding: 1rem;
+  padding: 0.5rem;
+  max-width: 500px;
+  height: 250px;
 }
 
 #projects article{
@@ -308,6 +307,7 @@ article {
 
 .project-img {
   position: relative;
+  max-width: 500px;
 }
 
 .project-img > ul {
@@ -327,12 +327,7 @@ article {
   font-size: 1rem;
 }
 
-@media (min-width: 550px) {
-  article {
-    display: grid;
-    grid-template-columns: repeat(10 1fr);
-    gap: 1rem;
-  }
+
 
 
 
@@ -341,7 +336,7 @@ article {
   
 
   
-}
+
 
 @media (min-width: 850px) {
   nav {
@@ -397,38 +392,6 @@ article {
   }
 }
 
-/* style the id stack and its children cards to scroll horizontally on the page */
-/* #stack {
-    overflow-x: auto;
-    white-space: nowrap;
-    padding: 1rem 0;
-}
 
-#stack .card {
-    display: inline-block;
-    margin: 0 1rem;
-    width: 300px;
-    border-radius: 10px;
-    background-color: var(--plum);
-    padding: 1rem;
-    text-align: center;
-}
 
-#stack img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-}
 
-#stack h3 {
-    margin: 0;
-    font-size: 1.5rem;
-    color: var(--aqua);
-}
-
-#stack p {
-    font-size: 1rem;
-    line-height: 1.5;
-} */
-
-/* style the id stack and its children cards to scroll horizontally on the page */
